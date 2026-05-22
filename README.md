@@ -6,7 +6,21 @@ The curriculum is based on the full coverage of the Deep Learning Mastery Cheat 
 
 ## Live Repos
 
-- **01 - `dl-foundations-math`**: https://github.com/kelvintechnical/dl-foundations-math (Labs 01-05 of 20 published; Labs 06-20 in progress)
+### Track 01 — `dl-foundations-math` (umbrella)
+
+The five foundational labs are now published as **standalone lab-level repos**, each with 20 hands-on PyTorch tasks and an "In plain English" narration with analogies on every task:
+
+| Lab | Repo | Topic |
+|---|---|---|
+| 01 | [`dl-tensors-and-shapes`](https://github.com/kelvintechnical/dl-tensors-and-shapes) | Tensor creation, `shape` / `ndim` / `dtype` / `numel`, reshape, indexing, NumPy↔PyTorch interop, GPU placement, autograd preview |
+| 02 | [`dl-tensor-operations`](https://github.com/kelvintechnical/dl-tensor-operations) | Element-wise math, in-place underscore rule, reductions, building activations (ReLU/Sigmoid/Tanh/Softmax) and losses (MSE/Cross-Entropy/Focal) from scratch |
+| 03 | [`dl-matrix-multiplication`](https://github.com/kelvintechnical/dl-matrix-multiplication) | Dot product, matmul, batched matmul, `einsum`, `nn.Linear`, scaled dot-product attention from scratch |
+| 04 | [`dl-broadcasting`](https://github.com/kelvintechnical/dl-broadcasting) | Right-align rule, `unsqueeze` / `None`, `expand` vs `repeat`, per-channel normalization, attention masks, vectorized pairwise distance |
+| 05 | [`dl-indexing-and-slicing`](https://github.com/kelvintechnical/dl-indexing-and-slicing) | Views vs copies, fancy indexing, boolean masks, reshape vs view, permute/transpose, `gather`/`scatter`, one-hot, KV-cache slicing |
+
+The original [`dl-foundations-math`](https://github.com/kelvintechnical/dl-foundations-math) repo remains as the umbrella collection of all 20 planned foundation labs.
+
+### Other Tracks
 
 The other 12 subject repos in the table below are planned and will be linked here as they are published.
 
@@ -14,7 +28,7 @@ The other 12 subject repos in the table below are planned and will be linked her
 
 | Order | Repo | Purpose | Status | Link |
 |---|---|---|---|---|
-| 01 | `dl-foundations-math` | Tensors, vectors, matrices, shapes, broadcasting, derivatives, gradients, autograd | Live (Labs 01-05 of 20) | https://github.com/kelvintechnical/dl-foundations-math |
+| 01 | `dl-foundations-math` (umbrella) | Tensors, shapes, element-wise math, matmul, broadcasting, indexing/slicing, derivatives, gradients, autograd | Live (Labs 01-05 published as 5 standalone repos above) | https://github.com/kelvintechnical/dl-foundations-math |
 | 02 | `dl-data-preprocessing` | Sequence padding, truncation, one-hot/label encoding, scaling, augmentation, tokenization, word embeddings, dimensionality reduction, outliers | Planned | Coming later |
 | 03 | `dl-neural-network-basics` | Perceptrons, layers, activations, losses, first training loops | Planned | Coming later |
 | 04 | `dl-training-mechanics` | Backprop, optimizers (SGD/Adam/RMSprop), learning rate scheduling, checkpoints, gradient clipping | Planned | Coming later |
